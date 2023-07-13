@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sathi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-07 11:44:03 AM"/>
+        <attribute name="created" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTItMDc7MTE6MzA6NDggQU07Mjg3MQ=="/>
+        <attribute name="edited" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTItMDc7MTE6NDQ6MDMgQU07MTsyOTc1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="t" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter the room temperature in Fahrenheit : &quot;" newline="True"/>
+            <input variable="t"/>
+            <if expression="t&lt;-460">
+                <then>
+                    <output expression="&quot;Invalid input&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="t&gt;=80">
+                        <then>
+                            <output expression="&quot;Go play golf&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="t&gt;=70">
+                                <then>
+                                    <output expression="&quot;Put a jacket on &quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;It's way too cold.&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

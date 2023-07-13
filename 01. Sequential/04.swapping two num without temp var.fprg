@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sathi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-17 03:51:25 PM"/>
+        <attribute name="created" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTEtMTc7MDM6NDQ6MDkgUE07Mjg4OQ=="/>
+        <attribute name="edited" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTEtMTc7MDM6NTE6MjUgUE07MTsyOTkz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter a number : &quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Enter another number : &quot;" newline="True"/>
+            <input variable="b"/>
+            <assign variable="a" expression="a+b"/>
+            <assign variable="b" expression="a-b"/>
+            <assign variable="a" expression="a-b"/>
+            <output expression="&quot;The numbers are swapped without the use of a temporary variable&#13;&#10;The value of a is : &quot;&amp;a&amp;&quot;&#13;&#10;The value of b is : &quot;&amp;b" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

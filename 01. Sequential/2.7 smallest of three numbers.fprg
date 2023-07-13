@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sathi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-07 03:46:24 PM"/>
+        <attribute name="created" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTItMDE7MDM6MDA6NDEgUE07Mjg3MQ=="/>
+        <attribute name="edited" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTItMDc7MDM6NDY6MjQgUE07NjszMDAx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter a number: &quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Enter another number : &quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;Enter the last number : &quot;" newline="True"/>
+            <input variable="c"/>
+            <if expression="a==b">
+                <then>
+                    <if expression="a==c">
+                        <then>
+                            <output expression="&quot;A , B and C are equal&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="a&lt;c">
+                                <then>
+                                    <output expression="&quot;Both A = &quot;&amp;a&amp;&quot; B = &quot;&amp;b&amp;&quot; are the smallest&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;C = &quot;&amp;c&amp;&quot; is the smallest&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="a&lt;b">
+                        <then>
+                            <if expression="a&lt;c">
+                                <then>
+                                    <output expression="&quot;A = &quot;&amp;a&amp;&quot; is the smallest&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="a==c">
+                                        <then>
+                                            <output expression="&quot;Both A = &quot;&amp;a&amp;&quot; C = &quot;&amp;c&amp;&quot; are the smallest&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;C = &quot;&amp;c&amp;&quot; is the smallest&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <if expression="b&lt;c">
+                                <then>
+                                    <output expression="&quot;B = &quot;&amp;b&amp;&quot; is the smallest&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="b==c">
+                                        <then>
+                                            <output expression="&quot;B = &quot;&amp;b&amp;&quot; and C = &quot;&amp;c&amp;&quot; are the smallest&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;C = &quot;&amp;c&amp;&quot; is the smallest&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

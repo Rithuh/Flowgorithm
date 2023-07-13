@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sathi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-27 08:58:25 PM"/>
+        <attribute name="created" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTEtMjc7MDc6Mjc6MDQgUE07Mjg5MA=="/>
+        <attribute name="edited" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTEtMjc7MDg6NTg6MjUgUE07OTszMDE0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="s, u, t, a" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter the initial velocity :  &quot;" newline="True"/>
+            <input variable="u"/>
+            <output expression="&quot;Enter the time taken : &quot;" newline="True"/>
+            <input variable="t"/>
+            <output expression="&quot;Enter the acceleration : &quot;" newline="True"/>
+            <input variable="a"/>
+            <assign variable="s" expression="(u*t)+(a*t*t/2)"/>
+            <output expression="&quot;The displacement = &quot;&amp;s" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

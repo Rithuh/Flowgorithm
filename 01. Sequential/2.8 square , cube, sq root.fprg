@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sathi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-05 01:43:05 PM"/>
+        <attribute name="created" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTItMDU7MDE6MTg6MDIgUE07Mjg3OQ=="/>
+        <attribute name="edited" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTItMDU7MDE6NDM6MDUgUE07MjsyOTg5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Real" array="False" size=""/>
+            <declare name="choice" type="Integer" array="False" size=""/>
+            <output expression="&quot;                             MENU&#13;&#10;ENTER:&#13;&#10;1 FOR SQUARE OF A NUMBER&#13;&#10;2 FOR CUBE OF A NUMBER&#13;&#10;3 FOR SQUARE ROOT OF A NUMBER&#13;&#10;&#13;&#10;Please enter your choice&quot;" newline="True"/>
+            <input variable="choice"/>
+            <if expression="choice == 1">
+                <then>
+                    <output expression="&quot;Enter a number : &quot;" newline="True"/>
+                    <input variable="a"/>
+                    <output expression="&quot;Square of &quot;&amp;a&amp;&quot; is &quot;&amp;a^2" newline="True"/>
+                </then>
+                <else>
+                    <if expression="choice == 2">
+                        <then>
+                            <output expression="&quot;Enter a number : &quot;" newline="True"/>
+                            <input variable="a"/>
+                            <output expression="&quot;Cube of &quot;&amp;a&amp;&quot; is &quot;&amp;a^3" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="choice == 3">
+                                <then>
+                                    <output expression="&quot;Enter a number : &quot;" newline="True"/>
+                                    <input variable="a"/>
+                                    <if expression="a&gt;=0">
+                                        <then>
+                                            <output expression="&quot;Square root of &quot;&amp;a&amp;&quot; is &quot;&amp;sqrt(a)" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;The square root of &quot;&amp;a&amp;&quot; is i(&quot;&amp;sqrt(-1*a)&amp;&quot;)&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Invalid choice&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

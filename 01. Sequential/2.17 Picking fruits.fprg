@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sathi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-07 12:05:42 PM"/>
+        <attribute name="created" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTItMDc7MTE6NDQ6NTUgQU07Mjg3NA=="/>
+        <attribute name="edited" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTItMDc7MTI6MDU6NDIgUE07MjsyOTky"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="String" array="False" size=""/>
+            <output expression="&quot;Pick one of the following fruits.&#13;&#10;You will be given another fruit based on your choice. &#13;&#10;Enter the name of the fruit exactly as given:&#13;&#10;&#13;&#10;Apples&#13;&#10;Oranges&#13;&#10;Bananas&#13;&#10;Grapes &quot;" newline="True"/>
+            <input variable="a"/>
+            <if expression="a==&quot;Apples&quot;">
+                <then>
+                    <output expression="&quot;You are given an Apple and a Banana&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="a==&quot;Oranges&quot;">
+                        <then>
+                            <output expression="&quot;You are given Orange and Grapes&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="a==&quot;Grapes&quot;">
+                                <then>
+                                    <output expression="&quot;You are given Grapes and a Banana&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="a==&quot;Bananas&quot;">
+                                        <then>
+                                            <output expression="&quot;You can pick any of the fruits available&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Invalid input&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

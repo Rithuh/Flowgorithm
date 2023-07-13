@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sathi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-27 08:21:42 PM"/>
+        <attribute name="created" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTEtMjc7MDc6Mjc6MDQgUE07Mjg5MA=="/>
+        <attribute name="edited" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTEtMjc7MDg6MjE6NDIgUE07NjszMDAw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter the Principal :  &quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Enter the rate of interest : &quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;Enter the number of years : &quot;" newline="True"/>
+            <input variable="c"/>
+            <output expression="&quot;Simple Interest = &quot;&amp;a*b*c/100" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

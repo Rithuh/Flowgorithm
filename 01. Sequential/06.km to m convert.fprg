@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sathi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-27 08:24:42 PM"/>
+        <attribute name="created" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTEtMjc7MDc6Mjc6MDQgUE07Mjg5MA=="/>
+        <attribute name="edited" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTEtMjc7MDg6MjQ6NDIgUE07MzszMDAw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter a distance :  &quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="a&amp;&quot; kilometres is &quot;&amp;(1000*a)&amp;&quot; metres&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

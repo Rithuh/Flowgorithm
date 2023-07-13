@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sathi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-01 03:23:50 PM"/>
+        <attribute name="created" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTItMDE7MDM6MDA6NDEgUE07Mjg3MQ=="/>
+        <attribute name="edited" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTItMDE7MDM6MjM6NTAgUE07MjsyOTg1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter a number: &quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Enter another number : &quot;" newline="True"/>
+            <input variable="b"/>
+            <if expression="a&gt;b">
+                <then>
+                    <output expression="&quot;A = &quot;&amp;a&amp;&quot; is greater&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="b&gt;a">
+                        <then>
+                            <output expression="&quot;B = &quot;&amp;b&amp;&quot; is greater&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Both are equal&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

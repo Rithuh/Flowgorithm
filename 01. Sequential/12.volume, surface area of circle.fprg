@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sathi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-27 08:34:48 PM"/>
+        <attribute name="created" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTEtMTc7MDI6MTE6MjQgUE07Mjg3OQ=="/>
+        <attribute name="edited" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTEtMjc7MDg6MzQ6NDggUE07NDszMDA4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sa, v, r" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter the radius : &quot;" newline="True"/>
+            <input variable="r"/>
+            <output expression="&quot;Surface Area = &quot;&amp;4*r*r*pi" newline="True"/>
+            <output expression="&quot;Volume = &quot;&amp;4*pi*(r^3)/3" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

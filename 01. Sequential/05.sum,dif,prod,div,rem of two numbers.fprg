@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sathi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-28 01:00:58 PM"/>
+        <attribute name="created" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTEtMjc7MDc6Mjc6MDQgUE07Mjg5MA=="/>
+        <attribute name="edited" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTEtMjg7MDE6MDA6NTggUE07MjsyOTk0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter a number: &quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Enter another number: &quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;Sum = &quot;&amp;(a+b)&amp;&quot; &#13;&#10;Difference = &quot;&amp;(a-b)&amp;&quot;&#13;&#10;Product = &quot;&amp;(a*b)&amp;&quot;&#13;&#10;Quotient = &quot;&amp;int(a/b)&amp;&quot;&#13;&#10;Remainder = &quot;&amp;(a%b)" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

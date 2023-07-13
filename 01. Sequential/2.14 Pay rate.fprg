@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sathi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-07 11:15:37 AM"/>
+        <attribute name="created" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTEtMjg7MDE6MDM6MTUgUE07Mjg4MQ=="/>
+        <attribute name="edited" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTItMDc7MTE6MTU6MzcgQU07NTsyOTg0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="r, n" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter the rate of pay per hour : &quot;" newline="True"/>
+            <input variable="r"/>
+            <output expression="&quot;Enter the number of hours worked in a week : &quot;" newline="True"/>
+            <input variable="n"/>
+            <if expression="r&lt;0||n&lt;0||n&gt;168">
+                <then>
+                    <output expression="&quot;Invalid Input&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="n&gt;40">
+                        <then>
+                            <output expression="&quot;Regular Pay = &quot;&amp;40*r&amp;&quot;&#13;&#10;Overtime Pay = &quot;&amp;(n-40)*r*1.5&amp;&quot;&#13;&#10;Gross Pay = &quot;&amp;(40*r)+((n-40)*r*1.5)" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Regular Pay = &quot;&amp;n*r&amp;&quot;&#13;&#10;Gross Pay = &quot;&amp;n*r" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

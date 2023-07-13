@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sathi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-28 01:18:11 PM"/>
+        <attribute name="created" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTEtMjc7MDc6Mjc6MDQgUE07Mjg5MA=="/>
+        <attribute name="edited" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTEtMjg7MDE6MTg6MTEgUE07NTsyOTk1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter a temperature in Celcius :  &quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="a&amp;&quot; Celcius is &quot;&amp;(a*9/5)+32&amp;&quot; Fahrenheit&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

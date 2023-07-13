@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sathi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-07 11:28:05 AM"/>
+        <attribute name="created" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTItMDc7MTA6NTY6NTcgQU07Mjg3OA=="/>
+        <attribute name="edited" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTItMDc7MTE6Mjg6MDUgQU07MzsyOTgx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="String" array="False" size=""/>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the name : &quot;" newline="True"/>
+            <input variable="n"/>
+            <output expression="&quot;Enter the age : &quot;" newline="True"/>
+            <input variable="a"/>
+            <if expression="a&lt;0">
+                <then>
+                    <output expression="&quot;Invalid age&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="a&gt;=16">
+                        <then>
+                            <output expression="n&amp;&quot; is old enough to drive&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="n&amp;&quot; is not eligible to drive now.&quot;&amp;n&amp;&quot; has to wait for &quot;&amp;(16-a)&amp;&quot; years&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sathi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-28 01:14:21 PM"/>
+        <attribute name="created" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTEtMjg7MDE6MTI6NTggUE07Mjg4OA=="/>
+        <attribute name="edited" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTEtMjg7MDE6MTQ6MjEgUE07MTsyOTg4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ad" type="String" array="False" size=""/>
+            <output expression="&quot;Enter your address : &quot;" newline="True"/>
+            <input variable="ad"/>
+            <output expression="&quot;Your address is : &quot;&amp;ad" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

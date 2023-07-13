@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sathi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-28 01:02:09 PM"/>
+        <attribute name="created" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTEtMjg7MTA6NTA6MTYgQU07Mjg2OQ=="/>
+        <attribute name="edited" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTEtMjg7MDE6MDI6MDkgUE07MTsyOTkx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1, num2, num3" type="Integer" array="False" size=""/>
+            <assign variable="num1" expression="5"/>
+            <assign variable="num2" expression="10"/>
+            <assign variable="num2" expression="num2+7"/>
+            <assign variable="num3" expression="num1*num2"/>
+            <assign variable="num2" expression="num2-num1"/>
+            <output expression="&quot;num1 = &quot;&amp;num1&amp;&quot;&#13;&#10;num2 = &quot;&amp;num2&amp;&quot;&#13;&#10;num3 = &quot;&amp;num3" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

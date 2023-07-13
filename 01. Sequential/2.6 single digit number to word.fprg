@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sathi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-05 12:12:37 PM"/>
+        <attribute name="created" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTItMDU7MTA6MzE6MDEgQU07Mjg1OA=="/>
+        <attribute name="edited" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTItMDU7MTI6MTI6MzcgUE07MjsyOTky"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter a number from 1 to 9 : &quot;" newline="True"/>
+            <input variable="a"/>
+            <if expression="a==1">
+                <then>
+                    <output expression="&quot;One&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="a==2">
+                        <then>
+                            <output expression="&quot;Two&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="a==3">
+                                <then>
+                                    <output expression="&quot;Three&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="a==4">
+                                        <then>
+                                            <output expression="&quot;Four&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="a==5">
+                                                <then>
+                                                    <output expression="&quot;Five&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="a==6">
+                                                        <then>
+                                                            <output expression="&quot;Six&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <if expression="a==7">
+                                                                <then>
+                                                                    <output expression="&quot;Seven&quot;" newline="True"/>
+                                                                </then>
+                                                                <else>
+                                                                    <if expression="a==8">
+                                                                        <then>
+                                                                            <output expression="&quot;Eight&quot;" newline="True"/>
+                                                                        </then>
+                                                                        <else>
+                                                                            <if expression="a==9">
+                                                                                <then>
+                                                                                    <output expression="&quot;Nine&quot;" newline="True"/>
+                                                                                </then>
+                                                                                <else>
+                                                                                    <output expression="&quot;Number not in the range of 1 to 9&quot;" newline="True"/>
+                                                                                </else>
+                                                                            </if>
+                                                                        </else>
+                                                                    </if>
+                                                                </else>
+                                                            </if>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

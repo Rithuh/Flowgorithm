@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sathi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-27 08:31:03 PM"/>
+        <attribute name="created" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTEtMTc7MDI6MTE6MjQgUE07Mjg3OQ=="/>
+        <attribute name="edited" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTEtMjc7MDg6MzE6MDMgUE07MzsyOTk1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="area, r" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter the radius : &quot;" newline="True"/>
+            <input variable="r"/>
+            <assign variable="area" expression="pi*r*r"/>
+            <output expression="&quot;Radius = &quot;&amp;r" newline="True"/>
+            <output expression="&quot;Area = &quot;&amp;area" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

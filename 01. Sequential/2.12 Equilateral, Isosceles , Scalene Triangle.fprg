@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sathi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-05 02:12:49 PM"/>
+        <attribute name="created" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTEtMjc7MDc6Mjc6MDQgUE07Mjg5MA=="/>
+        <attribute name="edited" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTItMDU7MDI6MTI6NDkgUE07MTM7MzA0NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter the first side :  &quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Enter the second side : &quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;Enter the third side : &quot;" newline="True"/>
+            <input variable="c"/>
+            <if expression="(a&lt;0||b&lt;0||c&lt;0)||!((a+b)&gt;c)&amp;&amp;((b+c)&gt;a)&amp;&amp;((c+a)&gt;b)">
+                <then>
+                    <output expression="&quot;Invalid Input&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="a==b">
+                        <then>
+                            <if expression="a==c">
+                                <then>
+                                    <output expression="&quot;Equilateral Triangle&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Isosceles Triangle&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <if expression="a==c">
+                                <then>
+                                    <output expression="&quot;Isosceles Triangle&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="b==c">
+                                        <then>
+                                            <output expression="&quot;Isosceles Triangle&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Scalene Triangle&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

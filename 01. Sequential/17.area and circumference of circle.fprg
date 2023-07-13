@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sathi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-28 10:25:09 AM"/>
+        <attribute name="created" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTEtMTc7MDI6MTE6MjQgUE07Mjg3OQ=="/>
+        <attribute name="edited" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTEtMjg7MTA6MjU6MDkgQU07NTsyOTg1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter the radius : &quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Area of the circle = &quot;&amp;pi*a*a&amp;&quot;&#13;&#10;Circumference of the circle = &quot;&amp;2*pi*a" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

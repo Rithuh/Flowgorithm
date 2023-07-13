@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sathi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-02-07 01:52:37 PM"/>
+        <attribute name="created" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjEtMDItMDc7MTE6NDY6MDkgQU07Mjg3NQ=="/>
+        <attribute name="edited" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjEtMDItMDc7MDE6NTI6MzcgUE07NDsyOTk4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="a" type="String" array="True" size="500"/>
+            <call expression="init(a)"/>
+            <for variable="i" start="1" end="499" direction="inc" step="1">
+                <call expression="inverse(a,i)"/>
+            </for>
+            <output expression="&quot;The bulbs that are in OFF state are : &quot;" newline="True"/>
+            <call expression="output(a)"/>
+        </body>
+    </function>
+    <function name="init" type="None" variable="">
+        <parameters>
+            <parameter name="a" type="String" array="True"/>
+        </parameters>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <for variable="i" start="0" end="499" direction="inc" step="1">
+                <assign variable="a[i]" expression="&quot;OFF&quot;"/>
+            </for>
+        </body>
+    </function>
+    <function name="inverse" type="None" variable="">
+        <parameters>
+            <parameter name="a" type="String" array="True"/>
+            <parameter name="i" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="j" type="Integer" array="False" size=""/>
+            <for variable="j" start="i" end="499" direction="inc" step="i+1">
+                <if expression="a[j]==&quot;OFF&quot;">
+                    <then>
+                        <assign variable="a[j]" expression="&quot;ON&quot;"/>
+                    </then>
+                    <else>
+                        <assign variable="a[j]" expression="&quot;OFF&quot;"/>
+                    </else>
+                </if>
+            </for>
+        </body>
+    </function>
+    <function name="output" type="None" variable="">
+        <parameters>
+            <parameter name="a" type="String" array="True"/>
+        </parameters>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <for variable="i" start="0" end="499" direction="inc" step="1">
+                <if expression="a[i]==&quot;OFF&quot;">
+                    <then>
+                        <output expression="&quot;BULB &quot;&amp;i+1" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

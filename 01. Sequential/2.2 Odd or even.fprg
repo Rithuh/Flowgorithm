@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sathi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-05 10:41:15 AM"/>
+        <attribute name="created" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTItMDE7MDI6NTY6MTkgUE07Mjg4Ng=="/>
+        <attribute name="edited" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTItMDU7MTA6NDE6MTUgQU07MjsyOTcz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter a number: &quot;" newline="True"/>
+            <input variable="a"/>
+            <if expression="a%2==0">
+                <then>
+                    <output expression="&quot;Even&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="a%2==1">
+                        <then>
+                            <output expression="&quot;Odd&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Neither even nor odd&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

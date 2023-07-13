@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sathi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-05 07:40:27 PM"/>
+        <attribute name="created" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTEtMjc7MDc6Mjc6MDQgUE07Mjg5MA=="/>
+        <attribute name="edited" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTItMDU7MDc6NDA6MjcgUE07OTszMDAz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter the first score :  &quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Enter the second score : &quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;Enter the third score : &quot;" newline="True"/>
+            <input variable="c"/>
+            <if expression="a&gt;100||b&gt;100||c&gt;100||a&lt;(-100)||b&lt;(-100)||c&lt;(-100)">
+                <then>
+                    <output expression="&quot;Invalid scores&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="(a+b+c)/3&gt;=75">
+                        <then>
+                            <output expression="&quot;Average = &quot;&amp;(a+b+c)/3&amp;&quot;&#13;&#10;You can proceed to next class&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Average = &quot;&amp;(a+b+c)/3" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

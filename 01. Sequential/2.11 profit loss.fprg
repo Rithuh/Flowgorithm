@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sathi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-05 02:05:04 PM"/>
+        <attribute name="created" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTEtMjk7MTI6MDM6NTUgUE07Mjg4OA=="/>
+        <attribute name="edited" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTItMDU7MDI6MDU6MDQgUE07MzsyOTg4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sp, cp" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter the cost price : &quot;" newline="True"/>
+            <input variable="cp"/>
+            <output expression="&quot;Enter the selling price : &quot;" newline="True"/>
+            <input variable="sp"/>
+            <if expression="cp&lt;0||sp&lt;0">
+                <then>
+                    <output expression="&quot;Invalid Input&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="sp-cp&gt;0">
+                        <then>
+                            <output expression="&quot;Profit = &quot;&amp;sp-cp" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Loss = &quot;&amp;cp-sp" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
