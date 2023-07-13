@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sathi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-12 11:28:23 PM"/>
+        <attribute name="created" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTItMTI7MDM6NDQ6NTYgUE07Mjg4Nw=="/>
+        <attribute name="edited" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTItMTI7MTE6Mjg6MjMgUE07MTA7MzAzOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sum" type="Real" array="False" size=""/>
+            <declare name="n, i" type="Integer" array="False" size=""/>
+            <do expression="n&lt;1">
+                <output expression="&quot;Enter the number of numbers you want to add : &quot;" newline="True"/>
+                <input variable="n"/>
+            </do>
+            <declare name="a" type="Real" array="True" size="n"/>
+            <assign variable="sum" expression="0"/>
+            <assign variable="i" expression="0"/>
+            <while expression="i&lt;n">
+                <output expression="&quot;Enter the number : &quot;" newline="True"/>
+                <input variable="a[i]"/>
+                <assign variable="sum" expression="sum+a[i]"/>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <output expression="&quot;Sum = &quot;&amp;sum" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

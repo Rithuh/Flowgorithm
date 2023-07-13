@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sathi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-12 08:14:39 PM"/>
+        <attribute name="created" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTItMTI7MDM6NDQ6NTYgUE07Mjg4Nw=="/>
+        <attribute name="edited" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTItMTI7MDg6MTQ6MzkgUE07NDszMDAx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, sum" type="Integer" array="False" size=""/>
+            <do expression="n&lt;1">
+                <output expression="&quot;Enter a natural number : &quot;" newline="True"/>
+                <input variable="n"/>
+            </do>
+            <assign variable="sum" expression="0"/>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <assign variable="sum" expression="sum+i"/>
+            </for>
+            <output expression="&quot;The sum of first &quot;&amp;n&amp;&quot; natural numbers = &quot;&amp;sum" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sathi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-12 11:05:20 PM"/>
+        <attribute name="created" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTItMTI7MDM6NDQ6NTYgUE07Mjg4Nw=="/>
+        <attribute name="edited" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTItMTI7MTE6MDU6MjAgUE07MTA7MzAzMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, sum" type="Integer" array="False" size=""/>
+            <do expression="n&lt;1">
+                <output expression="&quot;Enter a natural number : &quot;" newline="True"/>
+                <input variable="n"/>
+            </do>
+            <assign variable="sum" expression="0"/>
+            <assign variable="i" expression="3"/>
+            <while expression="i&lt;=n">
+                <if expression="i%3==0||i%5==0">
+                    <then>
+                        <assign variable="sum" expression="sum+i"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <output expression="&quot;The sum of  natural numbers till &quot;&amp;n&amp;&quot; who are the multiples of 3 or 5 = &quot;&amp;sum" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

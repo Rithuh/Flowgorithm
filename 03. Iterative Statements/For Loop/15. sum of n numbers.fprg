@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sathi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-12 10:15:32 PM"/>
+        <attribute name="created" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTItMTI7MDM6NDQ6NTYgUE07Mjg4Nw=="/>
+        <attribute name="edited" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTItMTI7MTA6MTU6MzIgUE07OTsyOTkz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sum" type="Real" array="False" size=""/>
+            <declare name="n, i" type="Integer" array="False" size=""/>
+            <do expression="n&lt;1">
+                <output expression="&quot;Enter the number of numbers you want to add : &quot;" newline="True"/>
+                <input variable="n"/>
+            </do>
+            <declare name="a" type="Real" array="True" size="n"/>
+            <assign variable="sum" expression="0"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <output expression="&quot;Enter the number : &quot;" newline="True"/>
+                <input variable="a[i]"/>
+                <assign variable="sum" expression="sum+a[i]"/>
+            </for>
+            <output expression="&quot;Sum = &quot;&amp;sum" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sathi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-12 10:53:36 PM"/>
+        <attribute name="created" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTItMTI7MDM6NDQ6NTYgUE07Mjg4Nw=="/>
+        <attribute name="edited" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTItMTI7MTA6NTM6MzYgUE07ODsyOTk4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <for variable="i" start="0" end="20" direction="inc" step="1">
+                <output expression="(4*i)+2020" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sathi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-12 10:45:21 PM"/>
+        <attribute name="created" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTItMTI7MDM6NDQ6NTYgUE07Mjg4Nw=="/>
+        <attribute name="edited" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTItMTI7MTA6NDU6MjEgUE07MzsyOTg4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i" type="Integer" array="False" size=""/>
+            <do expression="n&lt;1">
+                <output expression="&quot;Enter a natural number : &quot;" newline="True"/>
+                <input variable="n"/>
+            </do>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <output expression="i^3" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

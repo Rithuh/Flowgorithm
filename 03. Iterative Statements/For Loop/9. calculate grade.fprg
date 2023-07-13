@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sathi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-12 08:35:28 PM"/>
+        <attribute name="created" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTItMTI7MDg6MjE6NTkgUE07Mjg5MA=="/>
+        <attribute name="edited" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTItMTI7MDg6MzU6MjggUE07MTsyOTk5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="rno, i" type="Integer" array="False" size=""/>
+            <declare name="avg" type="Real" array="False" size=""/>
+            <declare name="mark" type="Real" array="True" size="3"/>
+            <do expression="rno&lt;1">
+                <output expression="&quot;Enter Roll number : &quot;" newline="True"/>
+                <input variable="rno"/>
+            </do>
+            <for variable="i" start="0" end="2" direction="inc" step="1">
+                <do expression="mark[i]&lt;-100||mark[i]&gt;100">
+                    <output expression="&quot;Enter the mark : &quot;" newline="True"/>
+                    <input variable="mark[i]"/>
+                </do>
+            </for>
+            <assign variable="avg" expression="(mark[0]+mark[1]+mark[2])/3"/>
+            <if expression="avg&gt;=80">
+                <then>
+                    <output expression="&quot;Congratulations! You have secured A grade!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="avg&gt;=70">
+                        <then>
+                            <output expression="&quot;Congratulations! You have secured B grade!&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="avg&gt;=60">
+                                <then>
+                                    <output expression="&quot;You have secured C grade&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="avg&gt;=50">
+                                        <then>
+                                            <output expression="&quot;You have secured D grade&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="avg&gt;=40">
+                                                <then>
+                                                    <output expression="&quot;You have secured E grade&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;You have got F grade&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

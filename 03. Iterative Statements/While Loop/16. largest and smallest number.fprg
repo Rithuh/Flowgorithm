@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sathi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-12 11:31:52 PM"/>
+        <attribute name="created" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTItMTI7MDM6NDQ6NTYgUE07Mjg4Nw=="/>
+        <attribute name="edited" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTItMTI7MTE6MzE6NTIgUE07MTI7MzAzNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="big, sml" type="Real" array="False" size=""/>
+            <declare name="n, i" type="Integer" array="False" size=""/>
+            <do expression="n&lt;1">
+                <output expression="&quot;Enter the number of numbers you want to enter : &quot;" newline="True"/>
+                <input variable="n"/>
+            </do>
+            <declare name="a" type="Real" array="True" size="n"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <output expression="&quot;Enter the number : &quot;" newline="True"/>
+                <input variable="a[i]"/>
+            </for>
+            <assign variable="sml" expression="a[0]"/>
+            <assign variable="big" expression="a[0]"/>
+            <assign variable="i" expression="0"/>
+            <while expression="i&lt;n">
+                <if expression="big&lt;a[i]">
+                    <then>
+                        <assign variable="big" expression="a[i]"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="sml&gt;a[i]">
+                    <then>
+                        <assign variable="sml" expression="a[i]"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <output expression="&quot;Largest number = &quot;&amp;big&amp;&quot;&#13;&#10;Smallest number = &quot;&amp;sml" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

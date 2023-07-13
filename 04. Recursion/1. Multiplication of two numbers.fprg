@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sathi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-02-02 02:43:40 PM"/>
+        <attribute name="created" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjEtMDItMDI7MDE6NTk6NTAgUE07Mjg4NA=="/>
+        <attribute name="edited" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjEtMDItMDI7MDI6NDM6NDAgUE07MjsyOTg2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter a number: &quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Enter another number: &quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;THe product of two numbers is &quot;&amp;mult(a,b)" newline="True"/>
+        </body>
+    </function>
+    <function name="mult" type="Integer" variable="prod">
+        <parameters>
+            <parameter name="a" type="Integer" array="False"/>
+            <parameter name="b" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="prod" type="Integer" array="False" size=""/>
+            <if expression="b==0">
+                <then>
+                    <assign variable="prod" expression="0"/>
+                </then>
+                <else>
+                    <assign variable="prod" expression="a+mult(a,b-1)"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

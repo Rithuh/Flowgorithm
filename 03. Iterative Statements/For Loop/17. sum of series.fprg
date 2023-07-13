@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sathi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-15 04:01:17 PM"/>
+        <attribute name="created" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTItMTI7MDM6NDQ6NTYgUE07Mjg4Nw=="/>
+        <attribute name="edited" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTItMTU7MDQ6MDE6MTcgUE07ODsyOTk2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i" type="Integer" array="False" size=""/>
+            <declare name="sum" type="Real" array="False" size=""/>
+            <do expression="n&lt;1">
+                <output expression="&quot;Enter a natural number : &quot;" newline="True"/>
+                <input variable="n"/>
+            </do>
+            <assign variable="sum" expression="0"/>
+            <for variable="i" start="2" end="n" direction="inc" step="2">
+                <assign variable="sum" expression="sum+(1/i)"/>
+            </for>
+            <output expression="&quot;The sum of series till &quot;&amp;n&amp;&quot; = &quot;&amp;sum" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

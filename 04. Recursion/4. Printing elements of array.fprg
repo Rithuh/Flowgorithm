@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sathi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-02-02 03:49:34 PM"/>
+        <attribute name="created" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjEtMDItMDI7MDM6Mjg6MDMgUE07Mjg4MA=="/>
+        <attribute name="edited" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjEtMDItMDI7MDM6NDk6MzQgUE07MTsyOTk1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the length of the array: &quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="a, temp" type="String" array="True" size="n"/>
+            <output expression="&quot;Enter the elements: &quot;" newline="True"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <input variable="a[i]"/>
+                <assign variable="temp[i]" expression="a[i]"/>
+            </for>
+            <output expression="disp(temp,n,i)" newline="True"/>
+        </body>
+    </function>
+    <function name="disp" type="String" variable="element">
+        <parameters>
+            <parameter name="temp" type="String" array="True"/>
+            <parameter name="n" type="Integer" array="False"/>
+            <parameter name="i" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="element" type="String" array="False" size=""/>
+            <assign variable="element" expression="&quot;&quot;"/>
+            <if expression="n&gt;0">
+                <then>
+                    <assign variable="element" expression="temp[i-n]&amp;&quot;&#13;&#10;&quot;&amp;disp(temp,n-1,i)"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

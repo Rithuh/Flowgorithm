@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sathi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-12 10:10:44 PM"/>
+        <attribute name="created" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTItMTI7MDM6NDQ6NTYgUE07Mjg4Nw=="/>
+        <attribute name="edited" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTItMTI7MTA6MTA6NDQgUE07NDsyOTg2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b" type="Real" array="False" size=""/>
+            <declare name="choice" type="String" array="False" size=""/>
+            <do expression="choice==&quot;y&quot;||choice==&quot;Y&quot;">
+                <output expression="&quot;Enter a number : &quot;" newline="True"/>
+                <input variable="a"/>
+                <output expression="&quot;Enter the second number : &quot;" newline="True"/>
+                <input variable="b"/>
+                <output expression="&quot;Sum = &quot;&amp;a+b" newline="True"/>
+                <output expression="&quot;Do you want to continue?&#13;&#10;Enter y (or) Y to continue and any other key to end&quot;" newline="True"/>
+                <input variable="choice"/>
+            </do>
+            <output expression="&quot;End of the program&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

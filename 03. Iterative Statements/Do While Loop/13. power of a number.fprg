@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sathi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-12 11:25:34 PM"/>
+        <attribute name="created" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTItMTI7MDM6NDQ6NTYgUE07Mjg4Nw=="/>
+        <attribute name="edited" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjAtMTItMTI7MTE6MjU6MzQgUE07ODsyOTk2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="This program is highly disadvantageous"/>
+            <declare name="i, b" type="Integer" array="False" size=""/>
+            <declare name="a, exp" type="Real" array="False" size=""/>
+            <do expression="a==0">
+                <output expression="&quot;Enter a non zero number : &quot;" newline="True"/>
+                <input variable="a"/>
+            </do>
+            <output expression="&quot;Enter an integer : &quot;" newline="True"/>
+            <input variable="b"/>
+            <assign variable="exp" expression="1"/>
+            <assign variable="i" expression="1"/>
+            <if expression="b&gt;0">
+                <then>
+                    <while expression="i&lt;=b">
+                        <assign variable="exp" expression="exp*a"/>
+                        <assign variable="i" expression="i+1"/>
+                    </while>
+                </then>
+                <else>
+                    <while expression="i&lt;=-b">
+                        <assign variable="exp" expression="exp/a"/>
+                        <assign variable="i" expression="i+1"/>
+                    </while>
+                </else>
+            </if>
+            <output expression="a&amp;&quot; to the power &quot;&amp;b&amp;&quot; = &quot;&amp;exp" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
