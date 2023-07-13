@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sathi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-01-05 07:51:56 PM"/>
+        <attribute name="created" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjEtMDEtMDU7MDY6NTY6MTQgUE07Mjg4OA=="/>
+        <attribute name="edited" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjEtMDEtMDU7MDc6NTE6NTYgUE07MTsyOTk4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the number of numbers : &quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="prod" type="Real" array="False" size=""/>
+            <declare name="num" type="Real" array="True" size="n"/>
+            <assign variable="prod" expression="1"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <output expression="&quot;Enter the number : &quot;" newline="True"/>
+                <input variable="num[i]"/>
+                <assign variable="prod" expression="prod*num[i]"/>
+            </for>
+            <output expression="&quot;The product of the numbers is &quot;&amp;prod" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

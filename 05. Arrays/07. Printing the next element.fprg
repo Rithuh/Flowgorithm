@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sathi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-01-05 09:10:47 PM"/>
+        <attribute name="created" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjEtMDEtMDU7MDY6NTY6MTQgUE07Mjg4OA=="/>
+        <attribute name="edited" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjEtMDEtMDU7MDk6MTA6NDcgUE07ODszMDAy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, j" type="Integer" array="False" size=""/>
+            <assign variable="j" expression="0"/>
+            <do expression="n&lt;0">
+                <output expression="&quot;Enter the number of numbers : &quot;" newline="True"/>
+                <input variable="n"/>
+            </do>
+            <declare name="key" type="Real" array="False" size=""/>
+            <declare name="num" type="Real" array="True" size="n"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <output expression="&quot;Enter the number : &quot;" newline="True"/>
+                <input variable="num[i]"/>
+            </for>
+            <output expression="&quot;Enter the number whose next element needs to be printed : &quot;" newline="True"/>
+            <input variable="key"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <if expression="key==num[i]">
+                    <then>
+                        <if expression="i==n-1">
+                            <then>
+                                <output expression="&quot;This is the last number in the list&quot;" newline="True"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;The number next to the entered number = &quot;&amp;num[i+1]" newline="True"/>
+                            </else>
+                        </if>
+                        <assign variable="j" expression="-1"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <if expression="j!=-1">
+                <then>
+                    <output expression="&quot;Number not found in the array&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

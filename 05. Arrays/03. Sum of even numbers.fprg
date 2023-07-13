@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sathi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-01-05 07:58:55 PM"/>
+        <attribute name="created" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjEtMDEtMDU7MDY6NTY6MTQgUE07Mjg4OA=="/>
+        <attribute name="edited" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjEtMDEtMDU7MDc6NTg6NTUgUE07NTszMDA4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the number of numbers : &quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="num" type="Real" array="True" size="n"/>
+            <declare name="sum" type="Integer" array="False" size=""/>
+            <assign variable="sum" expression="0"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <output expression="&quot;Enter the number : &quot;" newline="True"/>
+                <input variable="num[i]"/>
+                <if expression="num[i]&gt;=0">
+                    <then>
+                        <if expression="num[i]%2==0">
+                            <then>
+                                <assign variable="sum" expression="sum+num[i]"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;Sum of even numbers : &quot;&amp;sum" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

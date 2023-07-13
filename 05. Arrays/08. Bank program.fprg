@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sathi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-01-05 08:55:57 PM"/>
+        <attribute name="created" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjEtMDEtMDU7MDg6MjQ6MjcgUE07Mjg4OQ=="/>
+        <attribute name="edited" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjEtMDEtMDU7MDg6NTU6NTcgUE07MTszMDA0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, ch, high, cust" type="Integer" array="False" size=""/>
+            <do expression="n&lt;0">
+                <output expression="&quot;Enter the number of customers : &quot;" newline="True"/>
+                <input variable="n"/>
+            </do>
+            <declare name="id, bal" type="Integer" array="True" size="n"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <output expression="&quot;Enter the customer id : &quot;" newline="True"/>
+                <input variable="id[i]"/>
+                <do expression="bal[i]&lt;0">
+                    <output expression="&quot;Enter the balance: &quot;" newline="True"/>
+                    <input variable="bal[i]"/>
+                </do>
+            </for>
+            <do expression="ch==1||ch==2">
+                <output expression="&quot;Enter:&#13;&#10;1 to Display balance of a customer&#13;&#10;2 to Display the customer id with the highest balance&#13;&#10;Any other key to exit  &quot;" newline="True"/>
+                <input variable="ch"/>
+                <if expression="ch==1">
+                    <then>
+                        <output expression="&quot;Enter the customer id : &quot;" newline="True"/>
+                        <input variable="cust"/>
+                        <assign variable="high" expression="0"/>
+                        <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                            <if expression="cust==id[i]">
+                                <then>
+                                    <output expression="&quot;The balance is : &quot;&amp;bal[i]" newline="True"/>
+                                    <assign variable="high" expression="-1"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </for>
+                        <if expression="high==0">
+                            <then>
+                                <output expression="&quot;Customer id not found&quot;" newline="True"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </then>
+                    <else>
+                        <if expression="ch==2">
+                            <then>
+                                <assign variable="high" expression="0"/>
+                                <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                                    <if expression="high&lt;bal[i]">
+                                        <then>
+                                            <assign variable="high" expression="bal[i]"/>
+                                        </then>
+                                        <else/>
+                                    </if>
+                                </for>
+                                <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                                    <if expression="high==bal[i]">
+                                        <then>
+                                            <output expression="&quot;The customer id of the customer having the highest balance = &quot;&amp;id[i]&amp;&quot;&#13;&#10;The highest balance = &quot;&amp;bal[i]" newline="True"/>
+                                        </then>
+                                        <else/>
+                                    </if>
+                                </for>
+                            </then>
+                            <else>
+                                <output expression="&quot;Thank you! &quot;" newline="True"/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </do>
+        </body>
+    </function>
+</flowgorithm>

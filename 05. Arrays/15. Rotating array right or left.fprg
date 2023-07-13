@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sathi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-01-07 11:07:06 PM"/>
+        <attribute name="created" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjEtMDEtMDY7MDk6NTE6NTEgQU07Mjg3Mw=="/>
+        <attribute name="edited" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjEtMDEtMDY7MDg6NDI6MjggUE07MTtzYXRoaTtMQVBUT1AtU0NHTVIxTzk7MjAyMS0wMS0wNjswOTo1MTo1MSBBTTszLmZwcmc7NjUxOA=="/>
+        <attribute name="edited" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjEtMDEtMDc7MTE6MDc6MDYgUE07MjE7MzA0MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, j, k" type="Integer" array="False" size=""/>
+            <declare name="temp" type="Real" array="False" size=""/>
+            <do expression="n&lt;0">
+                <output expression="&quot;Enter the number of numbers : &quot;" newline="True"/>
+                <input variable="n"/>
+            </do>
+            <declare name="num, inter" type="Real" array="True" size="n"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <output expression="&quot;Enter the number: &quot;" newline="True"/>
+                <input variable="num[i]"/>
+            </for>
+            <do expression="k==1||k==2">
+                <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                    <assign variable="inter[i]" expression="num[i]"/>
+                </for>
+                <output expression="&quot;Enter :&#13;&#10;1. To Rotate Array To The Right&#13;&#10;2. To Rotate Array To The Left&#13;&#10;Any Other Number To Exit &#13;&#10;Enter your choice : &quot;" newline="True"/>
+                <input variable="k"/>
+                <if expression="k==1">
+                    <then>
+                        <assign variable="temp" expression="num[0]"/>
+                        <for variable="i" start="0" end="n-2" direction="inc" step="1">
+                            <assign variable="inter[i]" expression="inter[i+1]"/>
+                        </for>
+                        <assign variable="inter[n-1]" expression="temp"/>
+                    </then>
+                    <else>
+                        <if expression="k==2">
+                            <then>
+                                <assign variable="temp" expression="num[n-1]"/>
+                                <for variable="i" start="n-1" end="1" direction="dec" step="1">
+                                    <assign variable="inter[i]" expression="inter[i-1]"/>
+                                </for>
+                                <assign variable="inter[0]" expression="temp"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;Thank You!&quot;" newline="True"/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+                <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                    <output expression="inter[i]" newline="True"/>
+                </for>
+            </do>
+        </body>
+    </function>
+</flowgorithm>

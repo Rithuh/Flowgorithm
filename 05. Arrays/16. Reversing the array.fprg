@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sathi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-01-22 02:55:02 PM"/>
+        <attribute name="created" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjEtMDEtMDY7MDk6NTE6NTEgQU07Mjg3Mw=="/>
+        <attribute name="edited" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjEtMDEtMDY7MDg6NDI6MjggUE07MTtzYXRoaTtMQVBUT1AtU0NHTVIxTzk7MjAyMS0wMS0wNjswOTo1MTo1MSBBTTszLmZwcmc7NjUxOA=="/>
+        <attribute name="edited" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjEtMDEtMjI7MDI6NTU6MDIgUE07MjA7MzAzNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, j, k" type="Integer" array="False" size=""/>
+            <declare name="temp" type="Real" array="False" size=""/>
+            <do expression="n&lt;0">
+                <output expression="&quot;Enter the number of numbers : &quot;" newline="True"/>
+                <input variable="n"/>
+            </do>
+            <declare name="num, inp" type="Real" array="True" size="n"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <output expression="&quot;Enter the number: &quot;" newline="True"/>
+                <input variable="inp[i]"/>
+            </for>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <assign variable="num[i]" expression="inp[i]"/>
+            </for>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <assign variable="num[i]" expression="inp[n-i]"/>
+                <output expression="num[i]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

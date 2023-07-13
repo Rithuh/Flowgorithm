@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sathi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-01-05 08:08:32 PM"/>
+        <attribute name="created" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjEtMDEtMDU7MDY6NTY6MTQgUE07Mjg4OA=="/>
+        <attribute name="edited" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjEtMDEtMDU7MDg6MDg6MzIgUE07MzsyOTk3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the number of numbers : &quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="sum" type="Real" array="False" size=""/>
+            <declare name="num" type="Real" array="True" size="n"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <output expression="&quot;Enter the number : &quot;" newline="True"/>
+                <input variable="num[i]"/>
+            </for>
+            <assign variable="sum" expression="0"/>
+            <for variable="i" start="1" end="n-1" direction="inc" step="2">
+                <assign variable="sum" expression="sum+num[i]"/>
+            </for>
+            <output expression="&quot;The sum of elements present in the odd indices = &quot;&amp;sum" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

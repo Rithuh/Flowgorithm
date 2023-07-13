@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sathi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-02-02 03:11:32 PM"/>
+        <attribute name="created" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjEtMDItMDI7MDI6NTM6NDAgUE07Mjg3OA=="/>
+        <attribute name="edited" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjEtMDItMDI7MDM6MTE6MzIgUE07NDsyOTg1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter a number : &quot;" newline="True"/>
+            <input variable="n"/>
+            <output expression="&quot;The number of digits in the given number is &quot;&amp;count(n)&amp;&quot;&#13;&#10;The sum of didgits = &quot;&amp;sum(n)" newline="True"/>
+        </body>
+    </function>
+    <function name="count" type="Integer" variable="count">
+        <parameters>
+            <parameter name="n" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="count" type="Integer" array="False" size=""/>
+            <assign variable="count" expression="0"/>
+            <while expression="n/10!=0">
+                <assign variable="n" expression="n/10"/>
+                <assign variable="count" expression="count+1"/>
+            </while>
+        </body>
+    </function>
+    <function name="sum" type="Integer" variable="sum">
+        <parameters>
+            <parameter name="n" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="sum" type="Integer" array="False" size=""/>
+            <assign variable="sum" expression="0"/>
+            <while expression="n/10!=0">
+                <assign variable="sum" expression="sum+(n%10)"/>
+                <assign variable="n" expression="n/10"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sathi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-01-06 08:58:31 PM"/>
+        <attribute name="created" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjEtMDEtMDY7MDk6NTE6NTEgQU07Mjg3Mw=="/>
+        <attribute name="edited" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjEtMDEtMDY7MDg6NDI6MjggUE07MTtzYXRoaTtMQVBUT1AtU0NHTVIxTzk7MjAyMS0wMS0wNjswOTo1MTo1MSBBTTszLmZwcmc7NjUxOA=="/>
+        <attribute name="edited" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjEtMDEtMDY7MDg6NTg6MzEgUE07MjA7MzA0OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, j" type="Integer" array="False" size=""/>
+            <declare name="min" type="Real" array="False" size=""/>
+            <do expression="n&lt;0">
+                <output expression="&quot;Enter the number of numbers : &quot;" newline="True"/>
+                <input variable="n"/>
+            </do>
+            <declare name="num" type="Real" array="True" size="n"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <output expression="&quot;Enter the number: &quot;" newline="True"/>
+                <input variable="num[i]"/>
+            </for>
+            <assign variable="min" expression="abs(num[0]-num[1])"/>
+            <for variable="i" start="0" end="(n-1)" direction="inc" step="1">
+                <for variable="j" start="i+1" end="n-1" direction="inc" step="1">
+                    <if expression="min&gt;abs(num[i]-num[j])">
+                        <then>
+                            <assign variable="min" expression="abs(num[i]-num[j])"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+            <output expression="&quot;The minimum difference of any pair in the array is &quot;&amp;min" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

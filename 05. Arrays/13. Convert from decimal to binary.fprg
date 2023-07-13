@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sathi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-01-12 02:29:24 PM"/>
+        <attribute name="created" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjEtMDEtMDc7MDg6MDk6MjEgUE07Mjg4OA=="/>
+        <attribute name="edited" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjEtMDEtMTI7MDI6Mjk6MjQgUE07MjsyOTky"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b" type="Integer" array="False" size=""/>
+            <declare name="bin, n" type="String" array="False" size=""/>
+            <assign variable="bin" expression="&quot;&quot;"/>
+            <output expression="&quot;Enter a number : &quot;" newline="True"/>
+            <input variable="a"/>
+            <if expression="a&lt;0">
+                <then>
+                    <assign variable="n" expression="&quot;-&quot;"/>
+                    <assign variable="b" expression="-1*a"/>
+                </then>
+                <else>
+                    <assign variable="n" expression="&quot;&quot;"/>
+                    <assign variable="b" expression="a"/>
+                </else>
+            </if>
+            <while expression="b!=0">
+                <assign variable="bin" expression="b%2&amp;bin"/>
+                <assign variable="b" expression="b/2"/>
+            </while>
+            <output expression="&quot;The binary form of &quot;&amp;a&amp;&quot; is &quot;&amp;n&amp;bin" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

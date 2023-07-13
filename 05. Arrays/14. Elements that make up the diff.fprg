@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sathi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-01-07 09:21:43 PM"/>
+        <attribute name="created" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjEtMDEtMDY7MDk6NTE6NTEgQU07Mjg3Mw=="/>
+        <attribute name="edited" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjEtMDEtMDc7MDk6MDQ6NTkgUE07MjtzYXRoaTtMQVBUT1AtU0NHTVIxTzk7MjAyMS0wMS0wNjswOTo1MTo1MSBBTTsyLiBudW1iZXIgb2NjdXJpbmcgb2RkIG51bWJlciBvZiB0aW1lcy5mcHJnOzk5ODY="/>
+        <attribute name="edited" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjEtMDEtMDc7MDk6MjE6NDMgUE07MTM7MzA0Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, j, k, l" type="Integer" array="False" size=""/>
+            <declare name="diff, temp" type="Real" array="False" size=""/>
+            <do expression="n&lt;0">
+                <output expression="&quot;Enter the number of numbers : &quot;" newline="True"/>
+                <input variable="n"/>
+            </do>
+            <declare name="num" type="Real" array="True" size="n"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <output expression="&quot;Enter the number: &quot;" newline="True"/>
+                <input variable="num[i]"/>
+            </for>
+            <output expression="&quot;Enter the difference : &quot;" newline="True"/>
+            <input variable="diff"/>
+            <assign variable="diff" expression="abs(diff)"/>
+            <assign variable="l" expression="0"/>
+            <assign variable="k" expression="1"/>
+            <for variable="i" start="0" end="(n)/2" direction="inc" step="1">
+                <for variable="j" start="0" end="n-1" direction="inc" step="1">
+                    <if expression="num[i]&gt;num[j]">
+                        <then>
+                            <assign variable="temp" expression="num[i]"/>
+                            <assign variable="num[i]" expression="num[j]"/>
+                            <assign variable="num[j]" expression="temp"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+            <for variable="i" start="0" end="(n-1)" direction="inc" step="k">
+                <assign variable="k" expression="0"/>
+                <for variable="j" start="i" end="n-1" direction="inc" step="1">
+                    <if expression="num[i]==num[j]">
+                        <then>
+                            <assign variable="k" expression="k+1"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+                <for variable="j" start="i" end="n-1" direction="inc" step="1">
+                    <if expression="j==0">
+                        <then>
+                            <if expression="abs(num[i]-num[j])==diff&amp;&amp;i!=j">
+                                <then>
+                                    <output expression="&quot;The two elements that make up to the difference of &quot;&amp;diff&amp;&quot;  are : &quot;&amp;num[i]&amp;&quot; and &quot;&amp;num[j]" newline="True"/>
+                                    <assign variable="l" expression="-1"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </then>
+                        <else>
+                            <if expression="abs(num[i]-num[j])==diff&amp;&amp;i!=j&amp;&amp;num[j-1]!=num[j]">
+                                <then>
+                                    <output expression="&quot;The two elements that make up to the difference of &quot;&amp;diff&amp;&quot;  are : &quot;&amp;num[i]&amp;&quot; and &quot;&amp;num[j]" newline="True"/>
+                                    <assign variable="l" expression="-1"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </for>
+            </for>
+            <if expression="l==0">
+                <then>
+                    <output expression="&quot;No pair of numbers form the given difference&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

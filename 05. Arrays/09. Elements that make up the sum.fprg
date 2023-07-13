@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sathi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-01-06 10:25:13 AM"/>
+        <attribute name="created" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjEtMDEtMDY7MDk6NTE6NTEgQU07Mjg3Mw=="/>
+        <attribute name="edited" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjEtMDEtMDY7MTA6MjU6MTMgQU07MzsyOTc0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, j, k" type="Integer" array="False" size=""/>
+            <declare name="sum" type="Real" array="False" size=""/>
+            <do expression="n&lt;0">
+                <output expression="&quot;Enter the number of numbers : &quot;" newline="True"/>
+                <input variable="n"/>
+            </do>
+            <declare name="num" type="Real" array="True" size="n"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <output expression="&quot;Enter the number: &quot;" newline="True"/>
+                <input variable="num[i]"/>
+            </for>
+            <output expression="&quot;Enter the sum : &quot;" newline="True"/>
+            <input variable="sum"/>
+            <assign variable="k" expression="0"/>
+            <for variable="i" start="0" end="(n-1)/2" direction="inc" step="1">
+                <for variable="j" start="0" end="n-1" direction="inc" step="1">
+                    <if expression="num[i]+num[j]==sum&amp;&amp;i!=j">
+                        <then>
+                            <output expression="&quot;The two elements that add up to the sum are : &quot;&amp;num[i]&amp;&quot; and &quot;&amp;num[j]" newline="True"/>
+                            <assign variable="k" expression="-1"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+            <if expression="k==0">
+                <then>
+                    <output expression="&quot;No pair of numbers form the given sum&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

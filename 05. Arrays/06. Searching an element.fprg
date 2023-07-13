@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sathi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-01-05 08:19:18 PM"/>
+        <attribute name="created" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjEtMDEtMDU7MDY6NTY6MTQgUE07Mjg4OA=="/>
+        <attribute name="edited" value="c2F0aGk7TEFQVE9QLVNDR01SMU85OzIwMjEtMDEtMDU7MDg6MTk6MTggUE07NzszMDA3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, j" type="Integer" array="False" size=""/>
+            <assign variable="j" expression="0"/>
+            <do expression="n&lt;0">
+                <output expression="&quot;Enter the number of numbers : &quot;" newline="True"/>
+                <input variable="n"/>
+            </do>
+            <declare name="key" type="Real" array="False" size=""/>
+            <declare name="num" type="Real" array="True" size="n"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <output expression="&quot;Enter the number : &quot;" newline="True"/>
+                <input variable="num[i]"/>
+            </for>
+            <output expression="&quot;Enter the number to be searched : &quot;" newline="True"/>
+            <input variable="key"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <if expression="key==num[i]">
+                    <then>
+                        <output expression="&quot;Number found in the index &quot;&amp;i" newline="True"/>
+                        <assign variable="j" expression="-1"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <if expression="j!=-1">
+                <then>
+                    <output expression="&quot;Number not found in the array&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
